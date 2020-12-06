@@ -1,0 +1,41 @@
+<p class="description">LISTA DE BATALHAS</p>
+<div>
+  <button class="finishButton" *ngIf="listBattles.length > 1" mat-button mat-raised-button type="button"
+    (click)="finishPhase()">
+    Finalizar Fase
+  </button>
+
+  <button class="finishButton" *ngIf="listBattles.length == 1" mat-button mat-raised-button type="button"
+    (click)="finishTournament()">
+    Finalizar Torneio
+  </button>
+</div>
+
+<div *ngFor="let battles of listBattles">
+  <mat-card>
+    <mat-card-header>
+      <p id="card-header">Batalha</p>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-radio-group >
+        <div class="itemOne">
+          <p><strong>Jogador 1</strong></p>
+          <p>Região: {{battles.playerOne.region}} </p>
+          <p>Herói: {{battles.playerOne.heroName}}</p>
+        </div>
+        <div class="itemTwo">
+          <p><strong>Jogador 2</strong></p>
+          <p>Região: {{battles.playerTwo.region}} </p>
+          <p>Herói: {{battles.playerTwo.heroName}} </p>
+        </div><br>
+        <mat-radio-button value (click)="battles.winPlayer = 1">Vencedor Jogador 1 </mat-radio-button>
+        <mat-radio-button value (click)="battles.winPlayer = 2"  class="radioButtonTwo">Vencedor Jogador 2 </mat-radio-button> <br>
+      </mat-radio-group>
+      <button id="finishBattlesButton" mat-button mat-raised-button type="button" (click)="finishBattles(battles)">
+        Finalizar batalha
+      </button>
+    </mat-card-content>
+    <p *ngIf="battles.winningPlayer"> O Vencedor da Batalha é : <strong> {{battles.winningPlayer.heroName}} </strong> da
+      região <strong>{{battles.winningPlayer.region}}</strong> </p>
+  </mat-card>
+</div>

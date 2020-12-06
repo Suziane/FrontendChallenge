@@ -1,0 +1,24 @@
+#logo{
+    height: 40%;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.description{
+    color: rgb(228, 225, 225);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(44, 33, 59); 
+}
+
+#registerButton{
+    margin-left: 47%;
+    background-color:  rgb(44, 33, 59); 
+    color:  rgb(228, 225, 225);
+    font-size: 1.2em;
+    padding: 0.5em;
+    width: 10em;
+}

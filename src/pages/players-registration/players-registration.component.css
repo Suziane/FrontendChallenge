@@ -1,0 +1,73 @@
+  td , th {
+    width: 41.5%;
+    font-size: 1.1em;
+  }
+
+  .table{
+      width: 100%;
+  }
+
+  .mat-form-field{ 
+    width: 80%;
+  }
+
+  button{
+    font-size: 1.2em;
+    padding: 0.5em;
+    width: 10em;
+  }
+  
+  #startTournamentButton{
+    margin: 1em;
+    margin-left: 47%;
+    background-color:  rgb(44, 33, 59); 
+    color:  rgb(228, 225, 225);
+  }
+
+  #saveButton{
+    margin-left: 25%;
+    background-color:  rgb(44, 33, 59); 
+    color:  rgb(228, 225, 225);
+  }
+
+  #cancelButton{
+    margin-left: 1%;
+    background-color:  rgb(64, 64, 65); 
+    color:  rgb(228, 225, 225);
+  }
+
+  .description{
+    color: rgb(228, 225, 225);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(44, 33, 59); 
+  }
+
+  .descriptionSubtitle{
+    color: rgb(31, 28, 28);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: left;
+    margin-left: 20%;
+    font-size: 1.4em;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgb(1, 32, 4); 
+  }
+
+  .container{
+    margin-left: 20%;
+  }
+
+  ::placeholder, input{
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  th{
+    background-color:  rgb(44, 33, 59); 
+    color:  rgb(228, 225, 225);
+  }
