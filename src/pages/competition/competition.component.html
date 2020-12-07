@@ -28,8 +28,8 @@
           <p>Região: {{battles.playerTwo.region}} </p>
           <p>Herói: {{battles.playerTwo.heroName}} </p>
         </div><br>
-        <mat-radio-button value (click)="battles.winPlayer = 1">Vencedor Jogador 1 </mat-radio-button>
-        <mat-radio-button value (click)="battles.winPlayer = 2"  class="radioButtonTwo">Vencedor Jogador 2 </mat-radio-button> <br>
+        <mat-radio-button value={{battles.playerOne.id}} (click)="battles.winPlayer = 1">Vencedor Jogador 1 </mat-radio-button>
+        <mat-radio-button value={{battles.playerTwo.id}} (click)="battles.winPlayer = 2"  class="radioButtonTwo">Vencedor Jogador 2 </mat-radio-button> <br>
       </mat-radio-group>
       <button id="finishBattlesButton" mat-button mat-raised-button type="button" (click)="finishBattles(battles)">
         Finalizar batalha
